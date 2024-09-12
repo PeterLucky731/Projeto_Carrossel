@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    padding: 10px 60px;
+}
+
+#header-site{
+    padding: 10px 60px;
+    background-color: rgb(105, 14, 4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#header-site #img-header{
+    width: 100px;
+    height: 100px;
+}
+
+#header-site #img-header img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#header-site #nav-header{
+    padding: 5px 0;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#header-site #nav-header #box-btn-auau{
+    display: none;    
+}
+
+#header-site #nav-header #box-btn-auau #btn-auau{
+    background: transparent;
+    border: none;
+}
+
+#header-site #nav-header #box-btn-auau div{
+    height: 5px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+#header-site #nav-header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 100%;
+}
+
+#header-site #nav-header ul .item-nav-header{
+    height: 100%;
+    padding: 5px 0;
+}
+
+#header-site #nav-header ul .item-nav-header a{
+    padding: 8px 16px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#header-site #nav-header ul .item-nav-header a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+.sobre-uwu{
+    flex: 1;
+    padding-right: 20px;
+}
+
+.sobre-uwu h1{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.sobre-uwu p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sobre-image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    height: 300px;
+}
+
+.sobre-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
