@@ -15,7 +15,12 @@
 
         <nav id="nav-header">
             <div id="box-btn-auau">
-                <button id="btn-auau"></button>
+                <button id="btn-auau">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
             </div>
             <ul>
                 <li class="item-nav-header">
@@ -48,22 +53,6 @@
             <img src="./img/rinha-de-galo.jpg" alt="galo-rinha">
         </div>
     </section>
-
-    <!-- <section id="carrosel-section">
-        <div class="carrosel-container">
-            <div class="carrosel">
-                <div class="carrosel-item">
-                    <img src="./img/galodecombate1.png" alt="galodecombate1">
-                </div>
-                <div class="carrosel-item">
-                    <img src="./img/galodecombate2.png" alt="galodecombate2">
-                </div>
-                <div class="carrosel-item">
-                    <img src="./img/galodecombate3.png" alt="galodecombate3">
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section id="sec-carrosel">
 
@@ -153,7 +142,7 @@
                         </div>
                         <div class="info-produto">
                             <h2>Baphomet <span>VS</span> Você</h2>
-                            <span>batalha - 03:00</span>
+                            <span>Ele te aguarda - 03:00</span>
                         </div>
                         <div class="box-cta">
                             <img src="" alt="">
@@ -172,5 +161,37 @@
         </div>
     </section>
 
+    <footer>
+        <section id="formulario">
+            <h2>Fale com agente (junto)</h2>
+            <form action="#" method="POST">
+                <div class="grupu-formulario">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="grupu-formulario">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupu-formulario">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="butao-enviar">Enviar</button>
+            </form>
+        </section>
+    </footer>
+
 </body>
+    <script>
+        var btnAuau = document.getElementById("btn-auau");
+        var navHeader = document.querySelector("#nav-header ul");
+
+        btnHamburguer.addEventListener('click', function(evento){
+            evento.preventDefault();
+
+            navHeader.classList.toggle('ativo');
+        });
+    </script>
+
 </html>

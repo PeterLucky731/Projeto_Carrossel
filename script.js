@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Define quantos slides serão exibidos de acordo com o tamanho da tela
         function setScreenSize() {
             if (window.innerWidth >= 500) {
-                carroselDisplaying = 3;
+                carroselDisplaying = 4;
             } else if (window.innerWidth >= 300) {
                 carroselDisplaying = 2;
             } else {
