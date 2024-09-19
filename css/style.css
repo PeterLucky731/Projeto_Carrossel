@@ -4,6 +4,12 @@
     list-style: none;
     text-decoration: none;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f1f1f1;
+    color: #333;
 }
 
 header{
@@ -12,7 +18,7 @@ header{
 
 #header-site{
     padding: 10px 60px;
-    background-color: rgb(105, 14, 4);
+    background-color:#691C10;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,6 +35,7 @@ header{
     width: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 50%;
 }
 
 #header-site #nav-header{
@@ -77,7 +84,7 @@ header{
 }
 
 #header-site #nav-header ul .item-nav-header a:hover{
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 #sobre{
@@ -85,7 +92,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 40px 60px;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     margin: 20px 0;
 }
 
@@ -95,14 +102,15 @@ header{
 }
 
 .sobre-uwu h1{
-    font-size: 100px;
+    font-size: 75px;
     margin-bottom: 20px;
+    color: #000000;
 }
 
 .sobre-uwu p{
     font-size: 18px;
     line-height: 1.6;
-    color: #333;
+    color: #555;
 }
 
 .sobre-image{
@@ -117,6 +125,7 @@ header{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .slide{
@@ -137,6 +146,7 @@ header{
     border-radius: 5px;
     padding: 10px 14px;
     box-shadow: 0px 3px 9px #0000005c;
+    background-color: #fff;
 }
 
 .box-img-produto{
@@ -170,18 +180,24 @@ header{
 }
 
 .cta-produto{
-    background-color: rgb(68, 86, 252);
+    background-color: #4456FC;
     color: #f9f9f9;
     font-size: 14px;
     font-weight: 500;
     padding: 8px 12px;
     border-radius: 5px;
     border: none;
+    margin-top: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-produto:hover{
+    background-color: #333399;
 }
 
 .carrosel{
     position: relative;
-    width: 50%;
+    width: 60%;
     height: 266px;
     margin: 0 auto;
 }
@@ -192,3 +208,26 @@ header{
     transition: width .4s;
     height: 100%;
 }
+
+.nav{
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.nav.nav-left{
+    left: -50px;
+}
+
+.nav.nav-right{
+    right: -50px;
+}
+
